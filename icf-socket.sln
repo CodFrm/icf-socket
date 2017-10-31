@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26730.16
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "icf-socket", "icf-socket\icf-socket.vcxproj", "{98C58C33-50FF-48CB-A409-6E8A35DB42CB}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "icf-socket-server", "icf-socket-server\icf-socket-server.vcxproj", "{6E8C694E-0D0F-4D37-B5AC-755BCC18D36C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "icf-socket-client", "icf-socket-client\icf-socket-client.vcxproj", "{D84D5E60-9F89-42E6-A710-72058E953737}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,14 +15,22 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{98C58C33-50FF-48CB-A409-6E8A35DB42CB}.Debug|x64.ActiveCfg = Debug|x64
-		{98C58C33-50FF-48CB-A409-6E8A35DB42CB}.Debug|x64.Build.0 = Debug|x64
-		{98C58C33-50FF-48CB-A409-6E8A35DB42CB}.Debug|x86.ActiveCfg = Debug|Win32
-		{98C58C33-50FF-48CB-A409-6E8A35DB42CB}.Debug|x86.Build.0 = Debug|Win32
-		{98C58C33-50FF-48CB-A409-6E8A35DB42CB}.Release|x64.ActiveCfg = Release|x64
-		{98C58C33-50FF-48CB-A409-6E8A35DB42CB}.Release|x64.Build.0 = Release|x64
-		{98C58C33-50FF-48CB-A409-6E8A35DB42CB}.Release|x86.ActiveCfg = Release|Win32
-		{98C58C33-50FF-48CB-A409-6E8A35DB42CB}.Release|x86.Build.0 = Release|Win32
+		{6E8C694E-0D0F-4D37-B5AC-755BCC18D36C}.Debug|x64.ActiveCfg = Debug|x64
+		{6E8C694E-0D0F-4D37-B5AC-755BCC18D36C}.Debug|x64.Build.0 = Debug|x64
+		{6E8C694E-0D0F-4D37-B5AC-755BCC18D36C}.Debug|x86.ActiveCfg = Debug|Win32
+		{6E8C694E-0D0F-4D37-B5AC-755BCC18D36C}.Debug|x86.Build.0 = Debug|Win32
+		{6E8C694E-0D0F-4D37-B5AC-755BCC18D36C}.Release|x64.ActiveCfg = Release|x64
+		{6E8C694E-0D0F-4D37-B5AC-755BCC18D36C}.Release|x64.Build.0 = Release|x64
+		{6E8C694E-0D0F-4D37-B5AC-755BCC18D36C}.Release|x86.ActiveCfg = Release|Win32
+		{6E8C694E-0D0F-4D37-B5AC-755BCC18D36C}.Release|x86.Build.0 = Release|Win32
+		{D84D5E60-9F89-42E6-A710-72058E953737}.Debug|x64.ActiveCfg = Debug|x64
+		{D84D5E60-9F89-42E6-A710-72058E953737}.Debug|x64.Build.0 = Debug|x64
+		{D84D5E60-9F89-42E6-A710-72058E953737}.Debug|x86.ActiveCfg = Debug|Win32
+		{D84D5E60-9F89-42E6-A710-72058E953737}.Debug|x86.Build.0 = Debug|Win32
+		{D84D5E60-9F89-42E6-A710-72058E953737}.Release|x64.ActiveCfg = Release|x64
+		{D84D5E60-9F89-42E6-A710-72058E953737}.Release|x64.Build.0 = Release|x64
+		{D84D5E60-9F89-42E6-A710-72058E953737}.Release|x86.ActiveCfg = Release|Win32
+		{D84D5E60-9F89-42E6-A710-72058E953737}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
