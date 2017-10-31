@@ -16,14 +16,13 @@ public:
 		{
 			throw "socket initialization error";
 		}
-		
-	}
-	server(int port):server() {
-		
-	}
-
-	bool init(int port) {
-		m_hSocket = socket(AF_INET, SOCK_STREAM, IPPROTO_TCP);//´´½¨TCPÌ×½Ó×Ö
 
 	}
+	server(int port) :server() {
+		init(port);
+	}
+
+	int init(int port);
+	static DWORD WINAPI workThread(LPVOID lpParam);
+
 };
