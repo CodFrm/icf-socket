@@ -23,7 +23,7 @@
     <ProjectGuid>{6E8C694E-0D0F-4D37-B5AC-755BCC18D36C}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>icfsocketserver</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.14393.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
