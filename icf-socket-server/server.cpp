@@ -36,6 +36,7 @@ DWORD WINAPI server::listenThread(LPVOID lpParam) {
 		int len = sizeof(client);
 		sClient = accept(socket->m_hSocket, &client, &len);
 		if (sClient>0) {
+			FD_SET(sClient, &socket->fs);
 			socket->m_Event->onAccpet(sClient);
 		}
 		else
@@ -46,7 +47,7 @@ DWORD WINAPI server::listenThread(LPVOID lpParam) {
 	return 0;
 }
 
-client_ip server::getClientMsg(SOCKET hClient) {
+client_ip server::getSocketMsg(SOCKET hClient) {
 	client_ip ret = {"",0};
 	struct sockaddr_in sa;
 	int len = sizeof(sa);
@@ -61,14 +62,22 @@ client_ip server::getClientMsg(SOCKET hClient) {
 
 DWORD WINAPI server::workThread(LPVOID lpParam) {
 	server* socket = (server*)lpParam;
-	fd_set fs;
-	FD_ZERO(&fs);
 	//FD_SET(&fs);
 	int iResult = 0;
 	while (true) {
-		iResult = select(NULL, &fs, NULL, NULL, NULL);
+		FD_ZERO(&socket->fs);
+
+		iResult = select(NULL, &socket->fs, NULL, NULL, NULL);
 		switch (iResult)
 		{
+		case 1:{
+			/*for (int i = 0; i < socket->fs.fd_count; i++)
+			{
+				if (FD_ISSET()) {
+
+				}
+			}*/
+		}
 		default:
 			break;
 		}

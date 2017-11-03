@@ -1,11 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26730.16
+VisualStudioVersion = 15.0.27004.2002
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "icf-socket-server", "icf-socket-server\icf-socket-server.vcxproj", "{6E8C694E-0D0F-4D37-B5AC-755BCC18D36C}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "icf-socket-client", "icf-socket-client\icf-socket-client.vcxproj", "{D84D5E60-9F89-42E6-A710-72058E953737}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "lib", "lib", "{A0006621-095B-4976-A047-B04268797C1B}"
+	ProjectSection(SolutionItems) = preProject
+		lib\LinkList.cpp = lib\LinkList.cpp
+		lib\LinkList.h = lib\LinkList.h
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -14,6 +14,7 @@ namespace icf {
 	};
 	class server {
 	private:
+		fd_set fs;
 		SOCKET m_hSocket;
 		callback* m_Event;
 		static DWORD WINAPI workThread(LPVOID lpParam);
@@ -33,7 +34,7 @@ namespace icf {
 
 		int init(int port, callback* callback);
 
-		static client_ip getClientMsg(SOCKET hClient);
+		static client_ip getSocketMsg(SOCKET hClient);
 
 	};
 	//事件回调
